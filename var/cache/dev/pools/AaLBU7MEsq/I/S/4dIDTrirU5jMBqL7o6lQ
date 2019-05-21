@@ -1,0 +1,46 @@
+<?php return [PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+            clone ($p['Doctrine\\ORM\\Mapping\\AttributeOverrides'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\AttributeOverrides')),
+            clone ($p['Doctrine\\ORM\\Mapping\\AttributeOverride'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\AttributeOverride')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    1 => 'access_tokens',
+                    3 => 'token',
+                    'token',
+                ],
+                'options' => [
+                    1 => [
+                        'collate' => 'utf8mb4_unicode_ci',
+                        'charset' => 'utf8mb4',
+                    ],
+                ],
+                'value' => [
+                    2 => [
+                        $o[3],
+                    ],
+                ],
+                'column' => [
+                    3 => $o[4],
+                ],
+                'length' => [
+                    4 => 128,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+            $o[2],
+        ],
+        []
+    );
+
+}];
